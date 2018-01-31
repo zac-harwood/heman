@@ -1,6 +1,7 @@
-" Name:				heman.vim
-" Version:			0.3
+" Name:			heman.vim
+" Version:		0.3
 " Maintainer:		<https://github.com/devnul1>
+" License:		MIT-License <https://choosealicense.com/licenses/mit/>
 
 
 set background=dark
