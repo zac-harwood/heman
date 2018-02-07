@@ -21,7 +21,9 @@ Attention
 Screenshots
 -----------
 Deja Vu Sans Mono
-![Screenshot Dark](https://i.imgur.com/UZqJSsN.jpg)
+![Screenshot gui heman](https://i.imgur.com/eeEjCR2.jpg)
+
+![Screenshot cterm heman](https://i.imgur.com/RrAPcrd.png)
 
 [Check gallery](https://imgur.com/a/mRCKe)
 
