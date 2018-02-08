@@ -21,7 +21,11 @@ Attention
 Screenshots
 -----------
 
+![Screensot gui heman BIG](https://i.imgur.com/eeEjCR2.jpg)
+
 ![Screenshot gui heman](https://i.imgur.com/OWT10vT.png)
+
+![Screenshot cterm heman big](https://i.imgur.com/dQRqjt5.jpg)
 
 ![Screenshot cterm heman](https://i.imgur.com/RrAPcrd.png)
 
