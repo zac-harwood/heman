@@ -21,13 +21,13 @@ Attention
 Screenshots
 -----------
 
-![Screensot gui heman BIG](https://i.imgur.com/eeEjCR2.jpg)
+![Screensot cterm heman](https://i.imgur.com/1ZQ84JY.jpg)
 
-![Screenshot gui heman](https://i.imgur.com/OWT10vT.png)
+![Screenshot gui heman](https://i.imgur.com/DJyJXWC.jpg)
 
-![Screenshot cterm heman big](https://i.imgur.com/dQRqjt5.jpg)
+![Screenshot cterm heman](https://i.imgur.com/SEpOwom.jpg)
 
-![Screenshot cterm heman](https://i.imgur.com/RrAPcrd.png)
+![Screenshot cterm heman](https://i.imgur.com/bm74Car.jpg)
 
 [Check gallery](https://imgur.com/a/mRCKe)
 
