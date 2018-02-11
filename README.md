@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.imgur.com/ASmLjWm.png"></p>
 
-This colorscheme is designed to write code in **C**, in a very playful and retro charming colors.
+This colorscheme is designed to write code in **C**, in very playful retro style colors.
 
 The **heman** theme is inspired by
 the **He-Man** action figure series from the 80es and uses a bright rainbow color palette.
