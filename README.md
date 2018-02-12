@@ -16,7 +16,7 @@ Attention
 ---------
 
 1. [Read this first](https://github.com/devnul1/heman/wiki/IMPORTANT)
-2. Typeface from screenshots is [Hack](https://github.com/source-foundry/Hack) (vim screenshots) and Deja Vu Sans Mono (gvim screenshots)
+2. Typeface from screenshots is Deja Vu Sans Mono
 
 Screenshots
 -----------
