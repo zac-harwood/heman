@@ -196,6 +196,7 @@ hi! link vimContinue Constant
 " C: {{{
 
 hi! link cStructure Identifier
+hi! link cBraces Conditional
 
 " https://github.com/justinmk/vim-syntax-extra
 hi! link cAnsiFunction Constant
