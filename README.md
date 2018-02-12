@@ -21,13 +21,15 @@ Attention
 Screenshots
 -----------
 
-![Screensot cterm heman](https://i.imgur.com/1ZQ84JY.jpg)
+<img src="https://i.imgur.com/3v1nMJR.jpg" alt="Drawing" style="width: 1024px;"/>
+
+![C](https://i.imgur.com/3v1nMJR.jpg)
 
 ![Screenshot gui heman](https://i.imgur.com/DJyJXWC.jpg)
 
-![Screenshot cterm heman](https://i.imgur.com/SEpOwom.jpg)
+![Javascript](https://i.imgur.com/9T37voB.jpg)
 
-![Screenshot cterm heman](https://i.imgur.com/bm74Car.jpg)
+![Shell-script](https://i.imgur.com/XIB0kNf.jpg)
 
 [Check gallery](https://imgur.com/a/mRCKe)
 
