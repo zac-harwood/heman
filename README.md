@@ -43,7 +43,7 @@ Color table
 + **CSS**
 + Go
 + Java
-+ JavaScript
++ **JavaScript**
 + Markdown
 + **Shell Script**
 
