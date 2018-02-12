@@ -34,7 +34,7 @@ Screenshots
 Color table
 -----------
 
-![Palette Dark](https://i.imgur.com/BzyJpK5.jpg)
+![Palette Dark](https://i.imgur.com/kZgqHc6.jpg)
 
 
 # FULL support for:
