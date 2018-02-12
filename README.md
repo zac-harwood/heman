@@ -20,16 +20,12 @@ Attention
 
 Screenshots
 -----------
-
-<img src="https://i.imgur.com/3v1nMJR.jpg" alt="Drawing" style="width: 1024px;"/>
-
+**C** :  
 ![C](https://i.imgur.com/3v1nMJR.jpg)
-
-![Screenshot gui heman](https://i.imgur.com/DJyJXWC.jpg)
-
+**Javascript** :  
 ![Javascript](https://i.imgur.com/9T37voB.jpg)
-
-![Shell-script](https://i.imgur.com/XIB0kNf.jpg)
+**Shell script** :  
+![Shell script](https://i.imgur.com/XIB0kNf.jpg)
 
 [Check gallery](https://imgur.com/a/mRCKe)
 
