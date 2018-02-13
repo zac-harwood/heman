@@ -29,6 +29,12 @@ Screenshots
 
 [Check gallery](https://imgur.com/a/mRCKe)
 
+Airline
+-------
+I use a slightly changed version of [angr.vim](https://github.com/devnul1/vim-airline-themes/blob/master/autoload/airline/themes/angr.vim) by [watsoncj](https://github.com/watsoncj)
+
+![Airline-theme](https://i.imgur.com/unpSxbe.gif)
+
 Color table
 -----------
 
