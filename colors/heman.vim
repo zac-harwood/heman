@@ -1,8 +1,8 @@
-" File:				heman
+" File:			heman
 " Maintainer:		devnul1 <d3v000@outlook.com>
-" Source:			https://github.com/devnul1/heman
+" Source:		https://github.com/devnul1/heman
 " Last Modified:	13 Feb 2018
-" License:			MIT-License https://choosealicense.com/licenses/mit/
+" License:		MIT-License https://choosealicense.com/licenses/mit/
 "
 
 " Init: {{{
@@ -34,10 +34,10 @@ let s:heman.purple		= ['#b767fa', 135] 	" 11
 let s:heman.orchid		= ['#e79df2', 177] 	" 10
 let s:heman.green		= ['#84fba2', 120] 	"  9
 let s:heman.morchid		= ['#ff66ff', 207] 	"  8
-let s:heman.darkestblue	= ['#1a4299', 26] 	"  7
-let s:heman.turquise	= ['#56b6c2', 73] 	"  6
-let s:heman.darkblue	= ['#2f5bc4', 26] 	"  5
-let s:heman.lightblue	= ['#638ffa', 69] 	"  4
+let s:heman.darkestblue		= ['#1a4299', 26] 	"  7
+let s:heman.turquise		= ['#56b6c2', 73] 	"  6
+let s:heman.darkblue		= ['#2f5bc4', 26] 	"  5
+let s:heman.lightblue		= ['#638ffa', 69] 	"  4
 let s:heman.fg2			= ['#dadada', 253] 	"  3
 let s:heman.fg1			= ['#575675', 60] 	"  2
 let s:heman.fg0			= ['#bab6e8', 147] 	"  1
