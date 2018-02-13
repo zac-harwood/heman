@@ -37,12 +37,17 @@ Color table
 
 # FULL support for:
 + **C**
-+ Ruby
-+ **CSS**
++ **Css**
 + Go
++ Html
 + Java
 + **JavaScript**
 + Markdown
-+ **Shell Script**
++ Perl
++ Php
++ Python
++ Ruby
++ **Shell script**
++ **Vim script**
 
 (Languages that i find look really good are **bold**)
