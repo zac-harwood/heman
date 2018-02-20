@@ -1,0 +1,59 @@
+// General ui settings (background, gutter, guides, ...)
+
+atom-text-editor {
+    // Inner space background color
+    background-color: @syntax-background-color;
+    // Inner space normal text color
+    color: @syntax-text-color;
+
+// Wrap line
+    .wrap-guide {
+        background-color: @syntax-wrap-guide-color;
+    }
+// Indent guides (lines that show paired brackets)
+    .indent-guide {
+        color: @syntax-indent-guide-color;
+    }
+// Invisible Character: ▸, ¬, ., etc.
+    .invisible-character {
+        color: @syntax-invisible-character-color;
+    }
+// Gutter color
+    .gutter {
+        background-color: @syntax-gutter-background-color;
+        color: @syntax-gutter-text-color;
+
+        .line-number {
+            &.cursor-line {
+                background-color: @syntax-gutter-background-color-selected;
+                color: @syntax-gutter-text-color-selected;
+            }
+
+            &.cursor-line-no-selection {
+                color: @syntax-gutter-text-color-selected;
+            }
+        }
+    }
+
+    .gutter .line-number.folded,
+    .gutter .line-number:after,
+    .fold-marker:after {
+        color: @fg1;
+    }
+
+    .invisible {
+        color: @syntax-text-color;
+    }
+
+    .cursor {
+        color: @syntax-cursor-color;
+    }
+
+    .selection .region {
+        background-color: @syntax-selection-color;
+    }
+}
+
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}

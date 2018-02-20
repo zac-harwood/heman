@@ -1,0 +1,364 @@
+// Syntax styles
+
+// Comments: //, /* ... */ etc.
+.syntax--comment {
+    color: @fg1;
+}
+
+// XXX: KEYWORD
+.syntax--keyword {
+    color: @purple;
+
+    &.syntax--character {
+        color: @morchid;
+    }
+
+    &.syntax--control {
+        color: @yellow;
+    }
+
+    &.syntax--include {
+        color: @orange;
+    }
+
+    &.syntax--define {
+        color: @orange;
+    }
+
+    // sizeof, "+", "*", etc.
+    &.syntax--operator {
+        color: @green;
+    }
+
+    &.syntax--control.syntax--at-rule.syntax--media {
+        color: @yellow;
+    }
+
+    &.syntax--other.syntax--special-method {
+        color: @darkblue;
+    }
+
+    &.syntax--other.syntax--important {
+        color: @morchid;
+    }
+
+    &.syntax--other.syntax--unit {
+        color: @morchid;
+    }
+}
+
+.syntax--storage {
+    color: @purple;
+}
+
+.syntax--type {
+    color: @orchid;
+}
+
+.syntax--constant {
+  color: @turquise;
+
+  &.syntax--character.syntax--escape {
+    color: @morchid;
+  }
+
+  &.syntax--language {
+      color: @red;
+  }
+  &.syntax--numeric {
+    color: @lightblue;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @darkblue;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @green;
+  }
+
+  &.syntax--other.syntax--placeholder {
+      color: @morchid;
+  }
+}
+
+.syntax--variable {
+  color: @morchid;
+  // this.!!
+  &.syntax--language {
+      color: @red;
+  }
+  &.syntax--interpolation {
+    color: darken(@red, 10%);
+  }
+
+  &.syntax--other.syntax--object {
+      color: @lightblue;
+  }
+
+  &.syntax--other.syntax--object.syntax--property {
+      color: @orchid;
+  }
+
+  &.syntax--other.syntax--module {
+      color: @orange;
+  }
+
+  &.syntax--parameter.syntax--function {
+    color: @syntax-text-color;
+  }
+
+  &.syntax--list.syntax--gfm {
+      color: @lightblue;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @red;
+  color: @syntax-background-color;
+}
+
+.syntax--string {
+  color: @purple;
+
+
+  &.syntax--regexp {
+    color: @lightblue;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @orange;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @red;
+  }
+}
+
+.syntax--punctuation {
+    &.syntax--definition {
+
+        &.syntax--keyword {
+            color: @orange;
+        }
+        &.syntax--comment {
+            color: @fg1;
+        }
+
+        &.syntax--string,
+        &.syntax--variable,
+        &.syntax--parameters,
+        &.syntax--array {
+            // " " string delimiter color
+            color: @syntax-text-color;
+        }
+
+        &.syntax--heading,
+        &.syntax--identity {
+            color: @darkblue;
+        }
+
+        &.syntax--bold {
+            color: @salmon;
+            font-weight: bold;
+        }
+
+        &.syntax--italic {
+            color: @purple;
+            font-style: italic;
+        }
+
+    }
+
+    &.syntax--section.syntax--embedded {
+        color: @green; //darken(@red, 10%);
+    }
+
+}
+
+.syntax--support {
+
+    &.syntax--variable {
+        color: @green;
+    }
+
+    &.syntax--constant {
+        color: @darkblue;
+    }
+  &.syntax--class {
+    color: @salmon;
+  }
+
+  &.syntax--function  {
+    color: @darkblue;
+
+    &.syntax--any-method {
+      color: @darkblue;
+    }
+
+    &.syntax--gfm {
+        color: @green;
+    }
+  }
+}
+
+.syntax--entity {
+    // #define preProc
+    &.syntax--name.syntax--function.syntax--preprocessor {
+        color: @lightblue;
+    }
+    &.syntax--name.syntax--function {
+        color: @darkblue;
+    }
+    // RootView
+    &.syntax--name.syntax--type {
+        color: @morchid;
+    }
+
+    &.syntax--name.syntax--other.syntax,
+    &.syntax--other.syntax--inherited-class {
+        color: @morchid;
+    }
+
+    &.syntax--other.syntax--name {
+        color: @morchid;
+    }
+    &.syntax--name.syntax--section {
+        color: @darkblue;
+    }
+
+    &.syntax--name.syntax--tag {
+        color: @orange;
+        //text-decoration: underline;
+    }
+
+    &.syntax--gfm {
+        color: @yellow;
+    }
+
+    &.syntax--other.syntax--attribute-name {
+        color: @lightblue;
+
+        &.syntax--id {
+            color: @morchid;
+        }
+    }
+}
+
+
+.syntax--meta {
+    // @main-color
+    &.syntax--property-value {
+        color: @darkblue;
+    }
+
+
+
+  &.syntax--doctype {
+      color: @orange;
+  }
+
+  &.syntax--period {
+      color: @green;
+  }
+
+  &.syntax--link {
+    color: @yellow;
+  }
+
+  &.syntax--require {
+    color: @darkblue;
+  }
+
+  &.syntax--selector {
+    color: @purple;
+  }
+
+  &.syntax--separator {
+    background-color: @fg1;
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    color: @fg2;
+    font-weight: bold;
+  }
+
+  &.syntax--link.syntax--gfm {
+      color: @lightblue;
+  }
+  &.syntax--changed {
+    color: @purple;
+  }
+
+  &.syntax--deleted {
+    color: @red;
+  }
+
+  &.syntax--strike {
+      color: @red;
+      text-decoration: line-through;
+  }
+
+  &.syntax--italic {
+    color: @morchid;
+    font-style: italic;
+  }
+
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+    color: @darkblue;
+  }
+
+  &.syntax--inserted {
+    color: @green;
+  }
+
+  &.syntax--list {
+    color: @red;
+  }
+
+  &.syntax--quote {
+    color: @fg2;
+    font-weight: bold;
+  }
+}
+
+.syntax--raw.syntax--gfm ,
+.syntax--code.syntax--gfm {
+  color: @green;
+
+  .syntax--source {
+    color: @lightblue;
+
+    .syntax--support.syntax--gfm {
+      color: @green;
+    }
+  }
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+  &.syntax--heading {
+    color: @purple;
+  }
+}
+
+.syntax--todo {
+    background-color: @yellow;
+    color: @syntax-background-color;
+}
+.syntax--xxx {
+    background-color: @yellow;
+    color: @syntax-background-color;
+}
+
+.syntax--fixme {
+    background-color: @red;
+    color: @syntax-background-color;
+}
