@@ -5,12 +5,6 @@ This colorscheme is designed to write code in **C**, in very playful retro style
 The **heman** theme is inspired by
 the **He-Man** action figure series from the 80es and uses a bright rainbow color palette.
 
-```vim Script
-    if exists("inner_child")
-        byThePowerOfGreyskull();
-        iHaveThePower();
-    endif
-```
 
 Attention
 ---------
