@@ -9,7 +9,7 @@ the **He-Man** action figure series from the 80es and uses a bright rainbow colo
 Attention
 ---------
 1. [Read this first](https://github.com/devnul1/heman/wiki/IMPORTANT).
-2. Install 'heman' in [Atom](https://github.com/devnul1/heman/wiki/Installation/_edit#atom-installation).
+2. Install 'heman' in [Atom](https://github.com/devnul1/heman/wiki/Installation#atom-installation).
 2. Typeface from screenshots is Deja Vu Sans Mono.
 
 Screenshots
