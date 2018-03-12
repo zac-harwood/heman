@@ -1,21 +1,21 @@
-" File:			heman
-" Maintainer:		devnul1 <d3v000@outlook.com>
-" Source:		https://github.com/devnul1/heman
-" Last Modified:	13 Feb 2018
-" License:		MIT-License https://choosealicense.com/licenses/mit/
+" File:     heman
+" Maintainer:   devnul1 <d3v000@outlook.com>
+" Source:   https://github.com/devnul1/heman
+" Last Modified:  13 Feb 2018
+" License:    MIT-License https://choosealicense.com/licenses/mit/
 "
 
 " Init: {{{
 
 if version > 580
-	hi clear
-	if exists("syntax_on")
-		syntax reset
-	endif
+  hi clear
+  if exists("syntax_on")
+    syntax reset
+  endif
 endif
 
 if !has('gui_running') && &t_Co != 256
-	finish
+  finish
 endif
 
 set background=dark
@@ -26,22 +26,22 @@ let g:colors_name='heman'
 
 let s:heman = {}
 
-let s:heman.orange		= ['#f95a00', 202] 	" 15
-let s:heman.red			= ['#ff5e5e', 203] 	" 14
-let s:heman.yellow		= ['#fccf2b', 220] 	" 13
-let s:heman.salmon		= ['#cf8551', 173] 	" 12
-let s:heman.purple		= ['#b767fa', 135] 	" 11
-let s:heman.orchid		= ['#e79df2', 177] 	" 10
-let s:heman.green		= ['#84fba2', 120] 	"  9
-let s:heman.morchid		= ['#ff66ff', 207] 	"  8
-let s:heman.darkestblue		= ['#1a4299', 26] 	"  7
-let s:heman.turquise		= ['#56b6c2', 73] 	"  6
-let s:heman.darkblue		= ['#2f5bc4', 26] 	"  5
-let s:heman.lightblue		= ['#638ffa', 69] 	"  4
-let s:heman.fg2			= ['#dadada', 253] 	"  3
-let s:heman.fg1			= ['#575675', 60] 	"  2
-let s:heman.fg0			= ['#bab6e8', 147] 	"  1
-let s:heman.bg			= ['#322f42', 236] 	"  0
+let s:heman.orange    = ['#f95a00', 202]  " 15
+let s:heman.red     = ['#ff5e5e', 203]  " 14
+let s:heman.yellow    = ['#fccf2b', 220]  " 13
+let s:heman.salmon    = ['#cf8551', 173]  " 12
+let s:heman.purple    = ['#b767fa', 135]  " 11
+let s:heman.orchid    = ['#e79df2', 177]  " 10
+let s:heman.green   = ['#84fba2', 120]  "  9
+let s:heman.morchid   = ['#ff66ff', 207]  "  8
+let s:heman.darkestblue   = ['#1a4299', 26]   "  7
+let s:heman.turquise    = ['#56b6c2', 73]   "  6
+let s:heman.darkblue    = ['#2f5bc4', 26]   "  5
+let s:heman.lightblue   = ['#638ffa', 69]   "  4
+let s:heman.fg2     = ['#dadada', 253]  "  3
+let s:heman.fg1     = ['#575675', 60]   "  2
+let s:heman.fg0     = ['#bab6e8', 147]  "  1
+let s:heman.bg      = ['#322f42', 236]  "  0
 
 " }}}
 " Emphasis: {{{
@@ -52,47 +52,36 @@ let s:bold = 'bold'
 let s:italic = 'italic'
 let s:underline = 'underline'
 let s:reverse = 'reverse'
-let s:undercurl = 'undercurl'
 
 " }}}
 " Highlight: {{{
 
 function! s:HL(group, ...)
-	" Arguments: group, guifg/ctermfg, guibg/ctermbg, gui/cterm, *guisp
+  " Arguments: group, guifg/ctermfg, guibg/ctermbg, gui
+  " foreground
+  let fg = a:1
 
-	" foreground
-	if a:0 >=# 1
-		let l:fg = a:1
-	else
-		let l:bg = s:none
-	endif
+  " background
+  if a:0 >= 2
+    let bg = a:2
+  else
+    let bg = s:none
+  endif
 
-	" background
-	if a:0 >=# 2
-		let l:bg = a:2
-	else
-		let l:bg = s:none
-	endif
+  " emphasis
+  if a:0 >= 3 && strlen(a:3)
+    let emstr = a:3
+  else
+    let emstr = 'NONE'
+  endif
 
-	" attribute
-	if a:0 >=# 3 && strlen(a:3)
-		let l:attr = a:3
-	else
-		let l:attr = 'NONE'
-	endif
+  let histring = [ 'hi!', a:group,
+    \ 'guifg=' . fg[0], 'ctermfg=' . fg[1],
+    \ 'guibg=' . bg[0], 'ctermbg=' . bg[1],
+    \ 'gui=' . emstr, 'cterm=' . emstr
+    \ ]
 
-	let l:hlstring = [ 'hi!', a:group,
-		\ 'guifg=' . l:fg[0], 'ctermfg=' . l:fg[1],
-		\ 'guibg=' . l:bg[0], 'ctermbg=' . l:bg[1],
-		\ 'gui=' . l:attr, 'cterm=' . l:attr
-		\ ]
-
-	" special
-	if a:0 >=# 4
-		call add(l:hlstring, 'guisp=' . a:4[0])
-	endif
-
-	execute join(l:hlstring, ' ')
+  execute join(histring, ' ')
 endfunction
 
 " }}}
@@ -179,16 +168,6 @@ call s:HL('Folded', s:heman.fg2, s:heman.lightblue)
 call s:HL('FoldColumn', s:heman.fg2, s:heman.darkblue)
 
 " }}}
-" Spell (GUI): {{{¬
-
-if has('gui_running') && has('spell')
-	call s:HL('SpellBad', s:heman.fg0, s:none, s:undercurl, s:heman.red)
-	call s:HL('SpellCap', s:heman.fg0, s:none, s:undercurl, s:heman.darkblue)
-	call s:HL('SpellRare', s:heman.fg0, s:none, s:undercurl, s:heman.purple)
-	call s:HL('SpellLocal', s:heman.fg0, s:none, s:undercurl, s:heman.lightblue)
-endif
-
-" }}}¬
 " Cursor: {{{
 
 " Character under cursor
@@ -316,6 +295,8 @@ hi! link javaScriptBraces Conditional
 hi! link javaScriptNumber Constant
 hi! link javaScriptRegexpString MoreMsg
 
+hi! link jsObjectKey Function
+
 " https://github.com/pangloss/vim-javascript
 hi! link jsImport Constant
 hi! link jsFrom Constant
@@ -345,6 +326,8 @@ hi! link rubyStringDelimiter MoreMsg
 hi! link htmlTag Conditional
 hi! link htmlEndTag htmlTag
 hi! link htmlTagName Constant
+
+hi! link htmlArg Function
 
 " }}}
 " help {{{
